@@ -9,9 +9,8 @@ body {
 
 .topper {
   width: 1047px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
@@ -177,8 +176,12 @@ body {
 /* Mobile Device */
 @media (max-width: 688px) {
   .topper {
-    width: 95%;
-    /* margin: 2px; */
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 2px;
   }
 
   .if-writing {
@@ -186,15 +189,8 @@ body {
   }
 
   .navbar {
-    width: 100%;
-    font-size: 6px;
-    /* margin: 2px; */
-    padding: 0;
-  }
-
-  .topper {
-    grid-template-columns: 1fr;
-    margin-bottom: 0;
+    width: 60%;
+    font-size: 8px;
   }
 
   .left-start {
@@ -209,14 +205,16 @@ body {
   }
 
   .preebook-button {
-    font-size: 10px;
+    font-size: 14px;
     padding: 4px;
     margin-bottom: 4px;
   }
 
   .freelancer {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 3px;
+    width: 80%;
+    text-align: center;
   }
 
   .left-start {
@@ -230,8 +228,8 @@ body {
   }
 
   .freelancer-write {
-    font-size: 8px;
-    width: 100%;
+    width: 80%;
+    font-size: 14px;
     padding: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -291,10 +289,13 @@ body {
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .topper {
+    text-align: center;
     width: 100%;
-    justify-content: center;
-    margin-right: auto;
+    grid-template-columns: 1fr;
     margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 2px;
   }
 
   .if-writing {
@@ -302,10 +303,10 @@ body {
   }
 
   .navbar {
-    width: 100%;
+    width: 70%;
     font-size: 15px;
-    padding: 0;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .left-start {
