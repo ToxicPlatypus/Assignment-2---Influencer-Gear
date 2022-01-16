@@ -1,0 +1,400 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Top Style */
+
+.topper {
+  width: 1047px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.if-writing {
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  font-size: 16px;
+}
+
+/* start your journey */
+
+.freelancer {
+  font-weight: bold;
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.start-your-journey {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1047px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-start {
+  width: 582px;
+  height: 270px;
+}
+
+.start-img {
+  background-image: url(images/Circle\ design.svg);
+  background-size: 475px 475px;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-bottom: 100px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.start-img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.preebook-button {
+  color: white;
+  text-decoration: none;
+  background-color: #e02c6d;
+  padding: 14px;
+  border-radius: 18px;
+}
+
+/* marketing products */
+
+.marketing {
+  width: 1047px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+/* Popular Collection */
+
+.Popular-Collection {
+  width: 1047px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.p1 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.center {
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  color: #fb8200;
+}
+
+#kala {
+  color: black;
+}
+
+.zero {
+  margin: 0;
+}
+
+.container {
+  border-radius: 10px;
+  padding: 6px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 329px;
+  height: 476px;
+}
+
+.container-img {
+  padding: 15px;
+  width: 300px;
+  height: 256px;
+}
+
+.container-writing {
+  padding-left: 15px;
+}
+
+.make-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px 30px;
+}
+
+/* last banner  */
+
+.make-grid2 {
+  width: 1047px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.make-grid2 img {
+  width: 100%;
+  margin: 0;
+}
+/* Footer */
+
+.footer {
+  color: white;
+  background-color: black;
+  padding: 40px;
+}
+
+.footer-icon {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*---------------------
+    Media Queries  
+-----------------------*/
+
+/* Mobile Device */
+@media (max-width: 688px) {
+  .topper {
+    width: 95%;
+    /* margin: 2px; */
+  }
+
+  .if-writing {
+    font-size: 10px;
+  }
+
+  .navbar {
+    width: 100%;
+    font-size: 6px;
+    /* margin: 2px; */
+    padding: 0;
+  }
+
+  .topper {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
+
+  .left-start {
+    width: 100%;
+  }
+
+  .start-your-journey {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .preebook-button {
+    font-size: 10px;
+    padding: 4px;
+    margin-bottom: 4px;
+  }
+
+  .freelancer {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  .left-start {
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .freelancer-write {
+    font-size: 8px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .start-img {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-size: 202px 190px;
+    width: 100%;
+  }
+
+  .start-img img {
+    height: 190px;
+    width: 190px;
+    margin: 0 auto;
+  }
+
+  .freelancer-write {
+    margin: 0 10px;
+  }
+
+  .marketing {
+    display: none;
+  }
+
+  .make-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .Popular-Collection {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .make-grid2 {
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .make-grid2 img {
+    width: 100%;
+  }
+
+  .flex-paragraph {
+    width: 80%;
+  }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .topper {
+    width: 100%;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .if-writing {
+    font-size: 20px;
+  }
+
+  .navbar {
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-start {
+    width: 100%;
+  }
+
+  .start-your-journey {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .preebook-button {
+    width: 120px;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 4px;
+  }
+
+  .freelancer {
+    font-size: 25px;
+    margin-bottom: 3px;
+  }
+
+  .left-start {
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .freelancer-write {
+    font-size: 12px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .start-img {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-size: 250px 260px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .start-img img {
+    height: 190px;
+    width: 190px;
+    margin: 0 auto;
+  }
+
+  .freelancer-write {
+    margin: 0 10px;
+  }
+
+  .marketing {
+    display: none;
+  }
+
+  .make-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .Popular-Collection {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .make-grid2 {
+    width: 100%;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .make-grid2 img {
+    width: 100%;
+  }
+
+  .flex-paragraph {
+    width: 80%;
+  }
+}
